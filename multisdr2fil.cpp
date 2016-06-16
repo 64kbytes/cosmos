@@ -433,7 +433,7 @@ bool strip_path_and_extension(const char* filename, char* ret){
 
 	strcpy(ret, name);
 
-	delete name;
+	free(name);
 	return true;
 }
 
